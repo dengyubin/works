@@ -5,10 +5,17 @@
  - 性别：男
  - 学历：本科/广东海洋大学寸金学院
  - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
- - 工作年限：0年
+ - 工作经验：应届毕业生
  - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
  - 期望职位：前端开发
  - 期望城市：佛山or广州
+
+---
+# 个人描述
+
+- 精通DIV+CSS布局的HTML代码编写，熟练手写符合W3C标准的代码,编写出规范网页。
+- 具备抗压能力、且有一定自学能力。
+- 通过MDN、Github、CSDN、W3C、菜鸟教程等网站进行查找专业知识
 
 ---
 # 联系方式
@@ -29,7 +36,7 @@
 ---
 # 技能清单
 - 掌握技能:HTML、CSS
-- 一般掌握:JavaScript、CSS3
+- 一般掌握:JavaScript、CSS3、Ajax
 - 软件:sublime、chrome
 - 开发平台：windows
 - 数据库相关：MySQL
