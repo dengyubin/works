@@ -35,7 +35,7 @@
 - 数据库相关：MySQL
 
 ---
-[点击下载简历](src/images/works.pdf)![download](src/images/down.png "下载简历")
+[点击下载简历](src/images/me.pdf)![download](src/images/down.png "下载简历")
 
 （这是一个比较geek的简历，用的Markdown编写）
 # 致谢
