@@ -4,7 +4,7 @@
 
 # 个人风采
 
-![我是亨记](src/images/me.png "我是亨记")
+![邓宇斌](src/images/me.png "邓宇斌")
 
 # 联系方式
 
