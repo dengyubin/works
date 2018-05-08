@@ -1,7 +1,3 @@
-[点击下载简历](dist/邝业亨-个人简历.pdf)![download](src/images/down.png "下载简历")
-
-（这是一个比较geek的简历，用的Markdown编写）
-
 # 个人风采
 
 ![邓宇斌](src/images/me1.jpg "邓宇斌")
@@ -37,6 +33,8 @@
 - 数据库相关：MySQL
 
 ---
+[点击下载简历](src/images/works.pdf)![download](src/images/down.png "下载简历")
 
+（这是一个比较geek的简历，用的Markdown编写）
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会与您共事。
