@@ -10,6 +10,7 @@
 
 - Wechat: dybqaz
 
+- QQ：307381408
 
 ---
 
@@ -19,16 +20,16 @@
  - 出生：1995-08-31
  - 性别：男
  - 学历：本科/广东海洋大学寸金学院
+ - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
  - 工作年限：0年
  - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
-
  - 期望职位：前段开发
  - 期望城市：佛山or广州
 
 ---
 # 技能清单
-- 基本功：Javascript、Ajax、HTML、CSS
-- 软件:sublime、chrom
+- 掌握技能：Javascript、Ajax、HTML、CSS
+- 软件:sublime、chrome
 - 开发平台：windows
 - 数据库相关：MySQL
 
