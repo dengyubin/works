@@ -17,6 +17,7 @@
 - 具备抗压能力、且有一定自学能力。
 - 通过MDN、Github、CSDN、W3C、菜鸟教程等网站进行查找专业知识
 - 了解Node.js和vue.js以及git、github等技术；
+
 ---
 # 联系方式
 
