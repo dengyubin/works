@@ -1,7 +1,16 @@
-# 个人风采
 
-![邓宇斌](src/images/me1.jpg "邓宇斌")
+# 个人信息
+ - 姓名：邓宇斌     <img src='src/images/me1.jpg' align='right' style=' width:200px;height:200 px'/>     
+ - 出生：1995-08-31
+ - 性别：男
+ - 学历：本科/广东海洋大学寸金学院
+ - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
+ - 工作年限：0年
+ - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
+ - 期望职位：前段开发
+ - 期望城市：佛山or广州
 
+---
 # 联系方式
 
 - Mobile: 13726683513
@@ -11,20 +20,6 @@
 - Wechat: dybqaz
 
 - QQ：307381408
-
----
-
-# 个人信息
-
- - 姓名：邓宇斌
- - 出生：1995-08-31
- - 性别：男
- - 学历：本科/广东海洋大学寸金学院
- - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
- - 工作年限：0年
- - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
- - 期望职位：前段开发
- - 期望城市：佛山or广州
 
 ---
 # 技能清单
