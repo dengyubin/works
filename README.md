@@ -7,7 +7,7 @@
  - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
  - 工作年限：0年
  - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
- - 期望职位：前段开发
+ - 期望职位：前端开发
  - 期望城市：佛山or广州
 
 ---
@@ -28,7 +28,8 @@
 
 ---
 # 技能清单
-- 掌握技能：Javascript、Ajax、HTML、CSS
+- 掌握技能:HTML、CSS
+- 一般掌握:JavaScript、CSS3
 - 软件:sublime、chrome
 - 开发平台：windows
 - 数据库相关：MySQL
