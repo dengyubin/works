@@ -15,8 +15,7 @@
 
 - 精通DIV+CSS布局的HTML代码编写，熟练手写符合W3C标准的代码,编写出规范网页。
 - 具备抗压能力、且有一定自学能力。
-- 通过MDN、Github、CSDN、W3C、菜鸟教程等网站进行查找专业知识
-- 了解Node.js和vue.js以及git、github等技术；
+- 通过MDN、Github、CSDN、W3C、菜鸟教程等网站进行查找专业知识。
 
 ---
 # 联系方式
@@ -33,8 +32,8 @@
 
 ---
 # 技能清单
-- 掌握技能:HTML、CSS
-- 一般掌握:JavaScript、CSS3、Ajax
+
+- 熟练:HTML、CSS、JavaScript
 - 软件:sublime、chrome、ps切图
 - 开发平台：windows
 - 数据库相关：MySQL
