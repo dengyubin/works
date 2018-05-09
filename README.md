@@ -3,31 +3,32 @@
  - 姓名：邓宇斌     <img src='src/images/me1.jpg' align='right' style=' width:200px;height:200 px'/>
  - 出生：1995-08-31
  - 性别：男
- - 学历：本科/广东海洋大学寸金学院
+ - 学历：本科/信息管理与信息系统
+ - 学校:广东海洋大学寸金学院
  - 具体居住地:广东省佛山市南海区里水镇得胜南隅村十八巷9号
  - 工作经验：应届毕业生
  - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
- - 期望职位：前端开发
+ - 期望职位：前端开发工程师
  - 期望城市：佛山or广州
 
 ---
 # 个人描述
 
-- 精通DIV+CSS布局的HTML代码编写，熟练手写符合W3C标准的代码,编写出规范网页。
-- 具备抗压能力、且有一定自学能力。
+- 熟悉DIV+CSS布局的HTML代码编写，熟练手写符合W3C标准的代码,编写出规范网页。
+- 对互联网具有一定的兴趣，具备抗压能力、且有一定自学能力。
 - 通过MDN、Github、CSDN、W3C、菜鸟教程等网站进行查找专业知识。
+- 熟悉JavaScript语言，接触过vue.js、node.js和npm。
 
 ---
 # 联系方式
 
 - Mobile: 13726683513
 
-- Email: 307381408@qq.com
+- Email: a3073381408@gmail.com
 
 - Wechat: dybqaz
 
 - QQ：307381408
-
 
 
 ---
