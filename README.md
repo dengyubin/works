@@ -32,8 +32,8 @@
 
 ---
 # 技能清单
-
-- 熟练:HTML、CSS、JavaScript
+- 掌握技能:HTML、CSS
+- 熟悉:JavaScript、CSS3、Ajax
 - 软件:sublime、chrome、ps切图
 - 开发平台：windows
 - 数据库相关：MySQL
