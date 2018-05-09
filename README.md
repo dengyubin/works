@@ -29,10 +29,7 @@
 
 - QQ：307381408
 
----
-# Github小作品
 
-- Css3小按钮: https://dengyubin.github.io/works/css3btn.html
 
 ---
 # 技能清单
