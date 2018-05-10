@@ -31,11 +31,9 @@
 # 技能清单
 - 熟练使用DIV+CSS进行设计稿还原，且代码符合W3C规范
 - 熟练使用Google、Github搜索和解决问题
-- 熟悉原生JavaScript
+- 熟悉原生JavaScript、Ajax
 - 能使用sass、vue进行基本开发
-- 熟练使用jQuery、Ajax
 - 常用开发工具sublime、webstorm
-- 能熟练使用开发者工具进行网页调试和性能优化
 - 学习和使用过MySQL、JSP
 
 ---
