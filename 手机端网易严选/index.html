@@ -40,7 +40,7 @@
 				<a href=""><img src="images/00-header/Logo.png" alt=""></a>
 				<div class='y-slide'>
 					<i class='iconfont icon-iconfontzhizuobiaozhun22'></i>
-					<span>搜索商品, 共9542款好物</span>
+					<span contenteditable="true">搜索商品, 共9542款好物</span>
 				</div>
 			</div>
 			
@@ -904,7 +904,7 @@
 			</div>
 			<!-- 开始侧边导航 -->
 			<a href="" class='sidebar'></a>
-			<a href="" class='sidebar-two'></a>
+			<div class='sidebar-two back_to_top'></div>
 
 
 		</div>
@@ -931,9 +931,25 @@
 			
 		</div>
 	</div>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper-4.1.6.min.js"></script>
 	<script>
-		var mySwiper = new Swiper('.swiper-container', {
+        var backButton=$('.back_to_top');
+        function backToTop() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 800);
+        }
+        backButton.on('click', backToTop);
+        
+        $(window).on('scroll', function () {/*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
+            if ($(window).scrollTop() > $(window).height())
+                backButton.fadeIn();
+            else
+                backButton.fadeOut();
+        });
+        $(window).trigger('scroll');/*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
+        var mySwiper = new Swiper('.swiper-container', {
 			autoplay: true,
 			loop:true,//可选选项，自动滑动
 			/*分页器*/
