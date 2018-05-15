@@ -20,7 +20,7 @@
 - 小轮播:https://dengyubin.github.io/works/轮播.html
 - 拖拽:https://dengyubin.github.io/works/拖拽.html
 - DOM小操作:https://dengyubin.github.io/works/热门地区-DOM-添加节点内容.html
-- 图片飞入:https://dengyubin.github.io/works/01/图片飞入.html
+- 图片飞入:https://dengyubin.github.io/works/图片飞入.html
   
 ---
 # 个人描述
