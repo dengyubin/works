@@ -30,9 +30,13 @@ body {
   font-size: .37333rem;
   background-color: #ededed;
   border-radius: .10667rem;
-  text-align: center;
   line-height: 0.74666667rem;
   color: #666;
+  text-align: left;
+}
+.search-wrap .y-slide i {
+  display: inline-block;
+  margin-left: 20%;
 }
 /*开始导航*/
 .top-nav {
@@ -122,13 +126,13 @@ header a {
 .brand-content a {
   width: 4.73333333rem;
   height: 3.14666667rem;
-  background: url('../images/03-Brand/1.png') no-repeat center / cover #eeeeee;
+  background: url('../images/03-brand/1.png') no-repeat center / cover #eeeeee;
   margin-bottom: 0.13333333rem;
   color: #333;
   font-size: 0.37333333rem;
 }
 .brand-content a:nth-child(2n) {
-  background: url('../images/03-Brand/2.png') no-repeat center / cover #eeeeee;
+  background: url('../images/03-brand/2.png') no-repeat center / cover #eeeeee;
 }
 .brand-content a span {
   display: block;
