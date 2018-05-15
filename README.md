@@ -16,7 +16,8 @@
 
 - 国美页面布局:https://dengyubin.github.io/works/国美静态页面/index.html
 - 手机端网易严选:https://dengyubin.github.io/works/手机端网易严选/index.html
-- CSS3小特效:https://dengyubin.github.io/works/小球滚动.html
+- CSS3小特效:https://dengyubin.github.io/works/css3btn.html
+- 小球滚动:https://dengyubin.github.io/works/小球滚动.html
 - 小轮播:https://dengyubin.github.io/works/轮播.html
 - 拖拽:https://dengyubin.github.io/works/拖拽.html
 - DOM小操作:https://dengyubin.github.io/works/热门地区-DOM-添加节点内容.html
