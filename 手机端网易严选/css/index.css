@@ -43,17 +43,19 @@ body {
   padding: 0 0.4rem;
   width: 6000px;
 }
-.top-nav .nav a {
+.top-nav .nav span {
   height: 0.8rem;
   width: 1.17333333rem;
-  border-bottom: 0.01333333rem solid #ffffff;
   margin-right: 0.64rem;
   line-height: 0.8rem;
   text-align: center;
   color: #000;
 }
-.top-nav .nav a:nth-child(1) {
-  border-color: red;
+.redline {
+  border-bottom: 0.01333333rem solid #ff0000;
+}
+.nullline {
+  border-bottom: 0.01333333rem solid #ffffff;
 }
 /* 开始轮播图 */
 .y-main .swiper-container {
@@ -509,7 +511,7 @@ header a {
   background-color: #fff;
   z-index: 2;
 }
-.footer-bar a {
+.footer-bar > span {
   flex: 1;
   display: flex;
   flex-flow: column;
@@ -517,24 +519,27 @@ header a {
   align-items: center;
   height: 1.2rem;
 }
-.footer-bar a i {
+.footer-bar > span i {
   width: 0.53333333rem;
   height: 0.53333333rem;
-  background: url('../images/08-icon/3.png') no-repeat 0 -2.66666667rem;
+  background: url('../images/08-icon/3.png') no-repeat 0 -3.33333333rem;
   background-size: 100%;
 }
-.footer-bar a:nth-child(2) i {
+.footer-bar > span:nth-child(2) i {
   background-position: 0 -4.66666667rem;
 }
-.footer-bar a:nth-child(3) i {
+.footer-bar > span:nth-child(3) i {
   background-position: 0 -2rem;
 }
-.footer-bar a:nth-child(4) i {
+.footer-bar > span:nth-child(4) i {
   background-position: 0 -0.66666667rem;
 }
-.footer-bar a:nth-child(5) i {
+.footer-bar > span:nth-child(5) i {
   background-position: 0 -6rem;
 }
-.footer-bar a span {
+.footer-bar > span span {
   font-size: 0.32rem;
+}
+.red {
+  color: red;
 }

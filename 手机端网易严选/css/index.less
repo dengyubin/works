@@ -32,6 +32,7 @@ body{
 	text-align:center;
 	line-height: 56/@rem;
 	color: #666;
+
 }
 /*开始导航*/
 .top-nav{
@@ -43,18 +44,20 @@ body{
 	padding:0 30/@rem;
 	width: 6000px;
 }
-.top-nav .nav a{
+.top-nav .nav span{
 	height:60/@rem;
 	width:88/@rem;
-	border-bottom:1/@rem solid #fff;
 	margin-right:48/@rem;
 	line-height:60/@rem ;
 	text-align: center;
 	color: #000;
 }
 
-.top-nav .nav a:nth-child(1) {
-	border-color:red;
+.redline{
+  border-bottom: 1/@rem solid red;
+}
+.nullline{
+  border-bottom: 1/@rem solid #fff;
 }
 
 /* 开始轮播图 */
@@ -548,7 +551,7 @@ header a{
 	background-color:#fff;
 	z-index:2;
 }
-.footer-bar a{
+.footer-bar > span{
 	flex:1;
 	display: flex;
 	flex-flow:column;
@@ -556,24 +559,27 @@ header a{
 	align-items: center;
 	height: 90/@rem;
 }
-.footer-bar a i{
+.footer-bar > span i{
 	width: 40/@rem;
 	height: 40/@rem;
-	background: url('../images/08-icon/3.png') no-repeat 0 -200/@rem;
+	background: url('../images/08-icon/3.png') no-repeat 0 -250/@rem;
 	background-size: 100%;
 }
-.footer-bar a:nth-child(2) i{
+.footer-bar > span:nth-child(2) i{
 	background-position:0 -350/@rem;
 }  
-.footer-bar a:nth-child(3) i{
+.footer-bar > span:nth-child(3) i{
 	background-position:0 -150/@rem;
 } 
-.footer-bar a:nth-child(4) i{
+.footer-bar > span:nth-child(4) i{
 	background-position:0 -50/@rem;
 } 
-.footer-bar a:nth-child(5) i{
+.footer-bar > span:nth-child(5) i{
 	background-position:0 -450/@rem;
 } 
-.footer-bar a span{
+.footer-bar > span span{
 	font-size: 24/@rem;
+}
+.red{
+  color:red;
 }
