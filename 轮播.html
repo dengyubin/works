@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--声明当前文档的编码集：utf-8国际编码  gbk gb2313中文编码-->
+		<meta http-equiv='Content-type' content='text/html; charset=utf-8' />
+		<title>  </title>
+		<meta name='keywords' content=''>
+		<meta name='description' content='描述'>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+	        ul{list-style:none;}
+	        a{text-decoration:none; color:#8DCFF5;}
+	        body{font:14px '微软雅黑';color:black;}
+	        .clearfix:after{content:'';display: block;clear:both;}
+			div{
+
+				width:600px;
+				overflow: hidden;
+				position: relative;
+				margin:50px auto;
+			}
+			ul{
+				width: 4000px;
+			}
+			li{
+				float: left;
+				
+			}
+		
+			
+			img{
+				width: 600px;
+				height:400px;
+			}
+			.left{
+				position: absolute;
+				width:50px;
+				height:50px;
+				top:50%;
+				left:0;
+				margin-top:-25px;
+				background:black;
+				line-height: 50px;
+				font-size:50px;
+				cursor: pointer;
+				text-align:center;
+				opacity: 0.5;
+				color:white;
+			}
+			.right{
+				left:auto;
+				right:0;
+			}
+			.tab{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -100px;
+			width: 150px;
+			height: 30px;
+			padding-left:10px;
+			background: rgba(0,0,0,.2);
+			border-radius: 15px;
+			transition: .5s;
+			transform: scale(.8);
+		}
+		.tab:hover{
+			background: rgba(0,0,0,.5);
+			transform: scale(1.2);
+		}
+		.tab li{
+			width: 20px;
+			height: 20px;
+			float: left;
+			background: #fff;
+			border-radius: 50%;
+			margin: 5px 10px 0 0;
+			opacity: .35;
+			cursor: pointer;
+		}
+		.tab li.on{
+			position: absolute;
+			top: 0px;
+			background: #f60;
+			opacity: 1;
+			z-index: 99;
+		}
+		</style>
+	</head>
+<body>
+    <div>
+    	<ul class='clearfix'>
+    		<li><img src="images/title1.jpg" alt=""> </li>
+    		<li><img src="images/title2.jpg" alt=""></li>
+    		<li><img src="images/title3.jpg" alt=""></li>
+    	</ul>
+    	<ul class="tab">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    	<div class='left'><</div>
+    	<div class='left right'>></div>
+    </div>
+    <script type="text/javascript">
+    	var odiv=document.getElementsByTagName('div')[0];
+    	var oul=document.getElementsByTagName('ul')[0];
+    	var oli=oul.getElementsByTagName('li');
+    	var oleft=document.getElementsByClassName('left')[0];
+    	var oright=document.getElementsByClassName('right')[0];
+  		var	tabLi = odiv.querySelectorAll(".tab>li");
+  		var aLiOn = odiv.querySelector(".tab>li.on"); 
+    	var n=0; //图片的变量；
+    	var c=0;	//分液器的变量；
+    	var index=0;
+    	var lastChild = oul.children[0].cloneNode(true);   //为了实现无缝，将第一张图片复制放到最后面
+		oul.appendChild(lastChild);
+		function auto1(){ //自动轮播
+	    	a1=setInterval(function fn(){
+	    		n++;
+	    		c++;	
+	    		all();
+	    	},4000);
+    	}
+    	auto1();
+    	
+    	function all(){  //当第一运动到上一个，最后一个运动下一个的情况
+    		if(n==oli.length){
+    			oul.style.marginLeft =0;
+    			n=1;
+    		}else if(n == -1){
+				oul.style.marginLeft = -(oli.length-1)*oli[0].offsetWidth + 'px';
+				n = oli.length-2;
+			}
+    		move(oul,{"marginLeft":-n*oli[0].offsetWidth},500);
+    		if(c==tabLi.length-1){
+    			aLiOn.style.marginLeft =0;
+    			c=0;
+    		}else if(c==-1){
+    			aLiOn.style.marginLeft =0;
+    			c=tabLi.length-2;
+    		}
+    		move(aLiOn,{"marginLeft":c*30},500,)
+  						
+  			}		
+    		
+    	
+    	for (var i = 0; i < tabLi.length; i++) {
+    		tabLi[i].index=i-1;  //存每个值
+    		tabLi[i].onclick=function(){
+    			c=this.index;  //将这次点击的下标运动的值
+    			n=this.index;
+    			if(this.index==-1){ //每次点击自己,thisindex为-1点击自己不运行
+
+    			}else{
+    				all();  
+    				    //调用运动的函数
+        
+    			}  //存上一个值
+
+    		}
+    	}
+
+    	oleft.onclick=function(){
+    		n--;
+    		c--;
+    		all();
+    	}
+    	oright.onclick=function(){
+    		n++;
+    		c++;
+    		all();
+
+    	}
+    	odiv.onmouseover = function(){  //当鼠标要操作的时候把自动轮播的定时器停止
+			clearInterval(a1);
+		}
+		odiv.onmouseout = auto1;   //当鼠标离开的时候开始自动轮播 定时器
+    	function move(obj,option,time,reback){
+    		var startime= new Date();
+    		var star={};					
+    		var cha={};
+    		var reback=reback||undefined;  //没有运动函数就给undefind
+    		for (name in option) {
+    			star[name]=parseFloat(getCss(obj,name));		//获取初始值
+    			cha[name]=parseFloat(option[name]-star[name]); //获取中间差值
+    		}
+    		
+    		fn();
+    		function fn(){
+    			var guotime=new Date()-startime;
+    			var timenum=guotime/time;   //运用的时候是否到1；
+	    		for (name in option) {
+	    			val=star[name]+cha[name]*timenum;
+	    			if(timenum>1){  //强制不让超值
+		    			timenum=1;
+		    			var val = Math.min(option[name],val);  //控制最大最小
+	                    var val = Math.max(option[name],val);
+	                    reback&&reback.call(obj);    //当完成的时候运用一个回调函数
+	    			}
+	    			else{
+	    				requestAnimationFrame(fn);  //这次的运动还没完成就继续运行;
+	    			}
+	    			if (name === "opacity") {  //赋值判断是否透明度
+						obj.style[name] = val;  
+						obj.style.filter = "alpha(opacity="+ val*100 +")";
+					}else {
+						obj.style[name] = val + "px";
+					}
+	    		}
+	    		
+    		}
+    	}
+
+    	function getCss (element,attr) {
+			return element.currentStyle? element.currentStyle[attr] : getComputedStyle(element,false)[attr];
+		}
+		
+
+    </script>
+    
+</body>
+</html>

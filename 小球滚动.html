@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--声明当前文档的编码集：utf-8国际编码  gbk gb2313中文编码-->
+		<meta http-equiv='Content-type' content='text/html; charset=utf-8' />
+		<title>  </title>
+		<meta name='keywords' content=''>
+		<meta name='description' content='描述'>
+		
+    <script src=animation.js></script>
+		
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+	        ul{list-style:none;}
+	        a{text-decoration:none; color:#8DCFF5;}
+	        body{font:14px '微软雅黑';color:black;}
+	        .clearfix:after{content:'';display: block;clear:both;}
+	        div{
+	        	position: relative;
+	        	left:0px;
+	        	top:0px;
+	        	width: 50px;
+	        	height:50px;
+	        	background:red;
+	        	overflow: hidden;
+	        	border-radius: 50%;
+	        }
+
+		</style>
+	</head>
+<body>
+    <div>
+    	
+    </div>
+    <script type="text/javascript">
+    	var div1=document.getElementsByTagName('div')[0];
+    	var randomtop=0;
+    	var randomleft=0;
+    	var x = 1; 
+    	var y = 1;
+    	var a=document.documentElement.clientWidth-50;
+    	var b=document.documentElement.clientHeight-50; 	
+	    	a1=setInterval(function fn(){
+	    		randomleft+=y;
+	    		randomtop+=x; 
+	    		if(randomtop>=b||randomtop<=0){
+	    			x=-x;
+	    		}
+	    		if(randomleft>=a||randomleft<=0){
+	    			y=-y;
+	    		}
+	    		
+		    	div1.style.top=randomtop+'px';
+		    	div1.style.left=randomleft+'px';
+	    	},1);
+    	
+    	
+    	
+    </script>
+</body>
+</html>

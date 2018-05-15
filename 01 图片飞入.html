@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>40js</title>
+	<style>
+		*{margin:0;padding:0;}
+	
+		body{
+			background: #ddd;
+		}
+
+		#box{
+			position: relative;
+			width: 500px;
+			height: 500px;
+			margin:50px auto;
+			border:1px solid;
+
+		}
+		
+		#box>div{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        
+
+    	(function(){
+    		var arr = [],
+    			box = document.getElementById("box");
+
+    		for (var i = 0; i < 100; i++) {
+    			arr.push(i)
+
+    		}
+    		
+    		for (i = 0; i < arr.length; i++) { 
+    			var key = Math.floor(Math.random()*100);
+    			var mid = arr[i];
+    			arr[i] = arr[key];
+
+    			arr[key] = mid;
+
+
+    		}
+
+    		/*
+				00-09  	top:0; left: 50*9 = 450
+				10-19	top:50; left 50*9 = 450
+
+
+				90-99	top:450  left 50*9 = 450
+    		*/
+    		i = 0; 
+    		fn();
+    		function fn(){
+    			var value = arr[i];
+    			if (typeof value !== "undefined") {
+    				var top = Math.floor(value/10)*50,
+    					left = 50*(value%10);
+
+    				var str = "<div style='background:url(n.png) -"+ left +"px -"+ top +"px;'></div>";
+    				
+    				box.innerHTML += str;
+
+    				var div = box.getElementsByTagName('div')[i];
+
+    				animation(div,{
+    					
+    						top: top,
+    						left: left
+    					
+    				},100,function(){
+    					i++;
+    					requestAnimationFrame(fn)
+    				})
+    				
+    			}
+    		}
+    		
+        function animation(obj,json,time,reback){
+            var startime= new Date();
+            var star={};
+            var guo={};
+            for (name in json) {
+                 star[name]=parseFloat(getCss(obj,name));
+                 guo[name]=(json[name])-star[name];
+                           // statement
+            }   
+            fn();
+            function fn(){
+                var guotime=new Date()-startime;
+                var guonum=guotime/time;
+                for (name in json) {
+                    var val=star[name]+guo[name]*guonum;
+                    if (guonum>1) { //   到终点
+                        val = Math.min(json[name],val);
+                        val = Math.max(json[name],val);
+                    }
+
+                    obj.style[name]=val+'px';
+                }
+                if(guonum>1){
+                    reback && reback.call(obj);
+                }
+                else{
+                    requestAnimationFrame(fn);
+                }
+                
+            }
+        }
+
+        function getCss (element,attr) {
+            return element.currentStyle? element.currentStyle[attr] : getComputedStyle(element,false)[attr];
+        }
+
+
+    	}());
+    </script>
+</body>
+</html>
