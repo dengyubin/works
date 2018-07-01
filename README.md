@@ -7,7 +7,7 @@
  - 学校:广东海洋大学寸金学院
  - 工作经验：应届毕业生
  - Github：[https://github.com/dengyubin](https://github.com/dengyubin)
- - 期望职位：前端开发工程师
+ - 期望职位：前端开发工程师 /  网络推广 / 相关互联网工作
  - 期望城市：广州或佛山
 
 ---
