@@ -39,7 +39,6 @@
 - 熟练使用Google、Github搜索和解决问题
 - 熟练使用DIV+CSS进行设计稿还原，且代码符合W3C规范
 - 熟悉原生JavaScript、Ajax、jquery
-- 能使用sass、vue进行基本开发
 - 常用开发工具sublime、webstorm
 
 ---
