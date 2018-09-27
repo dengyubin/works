@@ -1,6 +1,6 @@
 
 # 个人信息
- - 姓名：邓宇斌     <img src='src/images/me1.jpg' align='right' style=' width:200px;height:200px；border:1px;border-radius:50%;overflow:hidden'/>
+ - 姓名：邓宇斌     <img src='src/images/me1.jpg' align='right' style=' width:200px;height:200px；border:1px;border-radius:40%;overflow:hidden'/>
  - 出生：1995-08-31
  - 性别：男
  - 籍贯:佛山南海里水
